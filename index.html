@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing Ninja</title>
+	<meta charset="UTF-8">
+	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script>
+		$(document).ready(function(){
+			$('img').click(function(){
+				$(this).css('visibility','hidden');
+				// $(this).fadeOut("fast");
+			});
+			$('button').click(function(){
+				// location.reload();
+				$('img').css('visibility','visible');
+			});
+		});
+	</script>
+	<style>
+		img{
+			height:  100px;
+			width: 100px;
+			border: 5px solid black;
+		}
+		#wrapper{
+			width: 580px;
+			text-align: center;
+		}
+		button{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<h1>These ninja are going fast!</h1>
+		<img src="ninja.jpg" alt="Ninja">
+		<img src="ninja.jpg" alt="Ninja">
+		<img src="ninja.jpg" alt="Ninja">
+		<img src="ninja.jpg" alt="Ninja">
+		<img src="ninja.jpg" alt="Ninja">
+		<img src="ninja.jpg" alt="Ninja">
+		<img src="ninja.jpg" alt="Ninja">
+		<img src="ninja.jpg" alt="Ninja">
+		<img src="ninja.jpg" alt="Ninja">
+		<img src="ninja.jpg" alt="Ninja">
+	</div>	
+	<br>
+	<button type="button">Restock!</button>
+</body>
+</html>
